@@ -66,5 +66,14 @@ for(var i = 0; i < 10; i++){
 }
 
 listaTareas.forEach(function(titulo){
-  document.write("<li>"+"<b>Titulo :</b> "+titulo.title+"<br>"+"</li>")
+ document.write("<ol>"+"<li>"+titulo.title+"<br>"+"</li>"+"</ol>")
 });
+
+function agregarDato(){
+  var agregar=document.getElementById("caja")
+  var agrega=document.getElementsByClassName("agreg")
+  agrega[0].innerHTML+="<ol>"+"<li>"+agregar.value+"<br><li>"+"</ol>";
+  agregar.value = "";
+
+};
+
