@@ -1,4 +1,3 @@
-var listaTareas = [];
 var tareas = [
   {
     "userId": 1,
@@ -60,11 +59,3 @@ var tareas = [
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
   }];
-	  
-for(var i = 0; i < 10; i++){
-	listaTareas.push(tareas[i])
-}
-
-listaTareas.forEach(function(titulo){
-  document.write("<li>"+"<b>Titulo :</b> "+titulo.title+"<br>"+"</li>")
-});
